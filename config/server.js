@@ -1,7 +1,7 @@
 module.exports = ({ env }) => ({
-  host: env('HOST', '0.0.0.0'),
-  port: env.int('PORT', 1337),
-  app: {
-    keys: env.array('APP_KEYS'),
+  proxy: true,
+  url: env('https://calm-journey-51634.herokuapp.com/'),
+  app: { 
+    keys: env.array('APP_KEYS')
   },
-});
+})
